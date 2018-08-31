@@ -24,8 +24,7 @@ const list = [
     render() {
       return (
         <div className="App">
-          {list.map(function(item) {
-              return (
+          {list.map(item => 
                   <div key={item.objectID}>
                       <span>
                         <a href={item.url}>{item.title}</a>
@@ -34,7 +33,7 @@ const list = [
                       <span>{item.num_comments}</span>
                       <span>{item.points}</span>
                   </div>
-              );
+              )
               })}
                   </div>
                   );
