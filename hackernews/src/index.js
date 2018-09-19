@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
+// HMR hot module replacement
 if(module.hot)
 {
     module.hot.accept();
